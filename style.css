@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --primary: #AAE3E2;
+    --secondary: #D9ACF5;
+    --third: #FFCEFE;
+    --fourth: #FDEBED;
+}
+
+body {
+    background-color: var(--fourth);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    font-family: 'Righteous', cursive;
+    height: auto;
+    background-color: var(--secondary);
+}
+
+.navbar ul {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+
+.container {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--primary);
+    position: relative;
+    left: 9%;
+}
+
+h1 {
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Carter One', cursive;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Carter One', cursive;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    box-shadow: inset 0 0 0 0 hotpink;
+    margin: 0 .25rem;
+    padding: 0 .25rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    color: black;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    box-shadow: inset 100px 0 0 0 hotpink;
+    color: #AAE3E2;
+    cursor: pointer;
+  }
+
+.option1, .option2 {
+    flex-wrap: wrap;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 15px;
+}
+
+.card img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.card a {
+    font-family: 'Righteous', cursive;
+    box-shadow: inset 0 0 0 0 #D9ACF5;
+    margin: 0 .25rem;
+    padding: 0 .25rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    color: black;
+    transition: color .3s ease-in-out, box-shadow .5s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.card a:hover {
+    box-shadow: inset 1000px 0 0 0 #D9ACF5;
+    color: rgb(3, 51, 80);
+    cursor: pointer;
+  }
+
+.clock {
+    font-size: 24px;
+    font-family: 'Righteous', cursive;
+}
+
+.footer {
+    height: 30px;
+    background-color: var(--third);
+}
+
+.footer a {
+    font-family: 'Righteous', cursive;
+    color: hotpink;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.login {
+    border-radius: 10px;
+    width: 40%;
+    background-color: #D9ACF5;
+    margin: 5% 25% 5% 30%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.login input {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    border: #AAE3E2 solid 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+}
+
+.login input[type=submit] {
+    background-color: #FFCEFE;
+    border: #AAE3E2 solid 2px;
+}
+
+.login input[type=submit]:hover {
+    transition: ease-in-out 0.3s;
+    border: #FFCEFE solid 2px;
+    background-color: #AAE3E2;
+    cursor: pointer;
+}
+
+.wrapperProfile {
+    margin: 30px 0 30px 15px;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+}
+
+.photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.player h1 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.player h2 {
+    text-align: right;
+    padding-bottom: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.player h3 {
+    padding: 10px 0 10px 0;
+    font-family: 'Righteous', cursive;
+}
+
+.player span {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.player a {
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+}
+
+.popup-wrapper {
+    display: none;
+}
+
+.popup-show {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+}
+
+.popup-show2 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+}
+
+.popupPass {
+    background-color: #FDEBED;
+    border-radius: 30px;
+    border: 2px solid #D9ACF5;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popupPass img {
+    position: absolute;
+    top: -10px;
+    width: 40px;
+}
+
+.popupPass h2 {
+    font-family: 'Righteous', cursive;
+    margin-top: 60px;
+}
+
+.popupPass input {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    border: #AAE3E2 solid 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+}
+
+.popupPass input[type=submit] {
+    background-color: #D9ACF5;
+    border: #FDEBED solid 2px;
+}
+
+.popupPass input[type=submit]:hover {
+    transition: ease-in-out 0.3s;
+    border: #FFCEFE solid 2px;
+    background-color: #AAE3E2;
+    cursor: pointer;
+}
+
+.popup-wrapper2 {
+    display: none;
+}
+
+.popupPic {
+    background-color: #FDEBED;
+    border-radius: 30px;
+    border: 2px solid #D9ACF5;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popupPic img {
+    position: absolute;
+    top: 40px;
+    width: 40px;
+}
+
+.popupPic h2 {
+    font-family: 'Righteous', cursive;
+    margin-top: 60px;
+}
+
+.popupPic input {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    border: #AAE3E2 solid 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+}
